@@ -80,6 +80,8 @@ pre {
   margin: 0 0 20px;
   padding: 10px;
   font-size: 16px; }
+  pre code {
+    padding: 0; }
 
 code {
   padding: 2px 4px;
@@ -87,9 +89,6 @@ code {
   color: #F03838;
   background-color: #F1F0EA;
   border-radius: 4px; }
-
-pre code {
-  padding: 0; }
 
 hr {
   border: none;
