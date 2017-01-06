@@ -601,6 +601,10 @@ table {
         a {
             float: none;
         }
+
+        + .button-square {
+            margin-left: 0;
+        }
     }
 
     .site-nav-item {
