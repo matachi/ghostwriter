@@ -321,6 +321,12 @@ table {
             width: 100%;
         }
     }
+
+    .gist {
+        tr {
+            border-bottom: 0;
+        }
+    }
 }
 
 .post-footer { margin-top: 5px; }
