@@ -40,6 +40,11 @@
                                 <i class="fa fa-twitter"></i>
                             </a>
                         {{ end }}
+                        {{ with .Site.Params.instagram }}
+                            <a class="button-square button-social hint--top" data-hint="Instagram" title="Instagram" href="{{ . }}">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        {{ end }}
                         {{ with .Site.Params.gitlab }}
                             <a class="button-square button-social hint--top" data-hint="Gitlab" title="Gitlab" href="{{ . }}">
                                 <i class="fa fa-gitlab"></i>
