@@ -205,10 +205,8 @@ table {
 .button-square {
     background: $primary;
     color: #FFF;
-    float: left;
     font-size: 17px;
-    margin: 0 0 0 10px;
-    padding: 3px 8px 4px;
+    padding: 4px 8px;
 
     &:hover { background: $secondary; }
 }
@@ -232,11 +230,6 @@ table {
     text-transform: uppercase;
 }
 
-.site-title-wrapper {
-    display: table;
-    margin: 0 auto;
-}
-
 .site-title {
     float: left;
     font-size: 14px;
@@ -245,7 +238,6 @@ table {
     text-transform: uppercase;
 
     a {
-        float: left;
         background: $primary;
         color: #FEFEFE;
         padding: 5px 10px 6px;
@@ -253,10 +245,23 @@ table {
         &:hover { background: $secondary; }
     }
 }
+
 .site-logo {
     display: block;
 
     img { margin: 0; }
+}
+
+.social-media-buttons {
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    > * {
+        display: inline-block;
+        margin: 8px 4px;
+    }
 }
 
 .site-nav {
@@ -546,6 +551,7 @@ table {
     height: 265px;
     margin-top: 95px;
     overflow: auto;
+    text-align: center;
 
     .site-title-wrapper { margin: 80px auto 35px; }
 
@@ -587,6 +593,28 @@ table {
 /* Media Queries */
 /* ============================================================ */
 
+@media only screen and (min-width: 601px) {
+    .site-title-wrapper {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .site-title {
+        display: inline-block;
+        margin: 8px 4px;
+
+        a  {
+            font-size: 17px;
+            padding: 4px 8px;
+        }
+    }
+
+    .social-media-buttons {
+        display: inline;
+        line-height: inherit;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .post-stub-tag { display: none; }
 }
@@ -616,10 +644,6 @@ table {
 
         a {
             float: none;
-        }
-
-        + .button-square {
-            margin-left: 0;
         }
     }
 
