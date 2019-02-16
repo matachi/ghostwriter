@@ -307,6 +307,7 @@ table {
 .page-title { margin: 15px 40px; }
 
 .post-date,
+.post-reading,
 .blog-description {
     color: #AEADAD;
     font-size: 14px;
@@ -316,7 +317,9 @@ table {
 
     a { color: #AEADAD; }
     a:hover { color: $primary; }
+}
 
+.post-line {
     &:after {
         border-bottom: 1px dotted $secondary;
         content: "";
